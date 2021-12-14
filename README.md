@@ -1,4 +1,4 @@
-# java-spring-api-webflux
+# Java Spring API WebFlux
 Exemplo de API Reativa com uso do Java Spring WebFlux e MongoDB
 
 This project was generated with [Java Spring Boot WebFlux](https://spring.io/projects/spring-boot) version 2.6.1
