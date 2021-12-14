@@ -1,7 +1,15 @@
 # java-spring-api-webflux
 Exemplo de API Reativa com uso do Java Spring WebFlux e MongoDB
 
-# Getting Started
+This project was generated with [Java Spring Boot WebFlux](https://spring.io/projects/spring-boot) version 2.6.1
+
+## Development server
+
+Navigate to `http://localhost:8080/api-webflux`. The app will automatically reload if you change any of the source files.
+
+## Build
+
+The build artifacts will be stored in the `target/` directory.
 
 ### Reference Documentation
 For further reference, please consider the following sections:
