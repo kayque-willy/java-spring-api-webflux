@@ -21,8 +21,8 @@
 
 //     @Override
 //     public void run(String... args) throws Exception {
-//         Remove todos os documentos do MongoDB e em seguida, adiciona uma sequencia de
-//         registros para popular o banco
+//         // Remove todos os documentos do MongoDB e em seguida, adiciona uma sequencia de
+//         // registros para popular o banco
 //         playlistRepository.deleteAll()
 //                 .thenMany(
 //                         Flux.just("API REST Spring Boot", "Deploy de uma aplicação java no IBM Cloud", "Java 8",
