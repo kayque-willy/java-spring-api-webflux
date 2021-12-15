@@ -30,4 +30,9 @@ public class PlayListService implements PlayListServiceInterface {
         return this.playListRepository.save(playList);
     }
     
+    @Override
+    public Mono<Void> delete(PlayList playList) {
+        return this.playListRepository.delete(playList);
+    }
+    
 }

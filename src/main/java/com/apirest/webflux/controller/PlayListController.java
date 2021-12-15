@@ -8,6 +8,7 @@ import com.apirest.webflux.service.PlayListService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -38,6 +39,11 @@ public class PlayListController {
     @PostMapping("/playlist")
     public Mono<PlayList> save(@RequestBody PlayList playList) {
         return this.playListService.save(playList);
+    }
+    
+    @DeleteMapping("/playlist")
+    public Mono<Void> delete(@RequestBody PlayList playList) {
+        return this.playListService.delete(playList);
     }
 
     //Stream de eventos por web flux

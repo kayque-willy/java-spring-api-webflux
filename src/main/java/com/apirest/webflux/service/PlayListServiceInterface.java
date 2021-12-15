@@ -9,4 +9,5 @@ public interface PlayListServiceInterface{
     Flux<PlayList> findAll();
     Mono<PlayList> findById(String id);
     Mono<PlayList> save(PlayList playList);
+    Mono<Void> delete(PlayList playList);
 }
