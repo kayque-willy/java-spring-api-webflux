@@ -1,4 +1,4 @@
-package com.apirest.webflux;
+package com.apirest.webflux.configuration;
 
 import com.apirest.webflux.document.PlayList;
 import com.apirest.webflux.service.PlayListService;

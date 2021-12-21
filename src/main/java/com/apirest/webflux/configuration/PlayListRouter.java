@@ -1,4 +1,4 @@
-package com.apirest.webflux;
+package com.apirest.webflux.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
