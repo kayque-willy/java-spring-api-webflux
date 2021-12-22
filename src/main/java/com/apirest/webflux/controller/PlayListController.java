@@ -13,18 +13,25 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import reactor.util.function.Tuple2;
 
-@CrossOrigin(origins = "*")
 @RestController
+@CrossOrigin(origins = "*")
+@RequestMapping("/api-webflux")
 public class PlayListController {
 
     @Autowired
     PlayListService playListService;
+
+    @GetMapping("")
+    public String index() {
+        return "Exemplo de API WEB-FLUX - Java Spring";
+    }
 
     @GetMapping("/playlist")
     public Flux<PlayList> getPlayList() {

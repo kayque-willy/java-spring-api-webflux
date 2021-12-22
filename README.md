@@ -7,6 +7,28 @@ This project was generated with [Java Spring Boot WebFlux](https://spring.io/pro
 
 Navigate to `http://localhost:8080/api-webflux`. The app will automatically reload if you change any of the source files.
 
+## API REQUESTS: 
+
+# Get playlist
+GET (json) -> return (json)
+`http://localhost:8080/api-webflux/playlist`
+
+# Get playlist by id
+GET (id = `bd540341-e8c4-4994-82ee-a75eb53bfa0e`) -> return (json)
+`http://localhost:8080/api-webflux/playlist/bd540341-e8c4-4994-82ee-a75eb53bfa0e`
+
+# Save playlist 
+POST (json) -> return (json)
+`http://localhost:8080/api-webflux/playlist`
+
+# Delete playlist
+DELETE (json) -> return boolean
+`http://localhost:8080/api-webflux/playlist`
+
+# Web-flux playlist
+DELETE (json) -> return boolean
+`http://localhost:8080/api-webflux/playlist/webflux`
+
 ## Build
 
 The build artifacts will be stored in the `target/` directory.
