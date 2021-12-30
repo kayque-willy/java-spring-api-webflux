@@ -9,25 +9,15 @@ Navigate to `http://localhost:8080/api-webflux`. The app will automatically relo
 
 ## API REQUESTS: 
 
-# Get playlist
-GET (json) -> return (json)
-`http://localhost:8080/api-webflux/playlist`
-
-# Get playlist by id
-GET (id = `bd540341-e8c4-4994-82ee-a75eb53bfa0e`) -> return (json)
-`http://localhost:8080/api-webflux/playlist/bd540341-e8c4-4994-82ee-a75eb53bfa0e`
-
-# Save playlist 
-POST (json) -> return (json)
-`http://localhost:8080/api-webflux/playlist`
-
-# Delete playlist
-DELETE (json) -> return boolean
-`http://localhost:8080/api-webflux/playlist`
-
-# Web-flux playlist
-DELETE (json) -> return boolean
-`http://localhost:8080/api-webflux/playlist/webflux`
+ROTA                          |     HTTP(Verbo)   |    Request    |    Return   |    Description           |
+----------------------------- | ----------------- | ------------- | ----------- | ------------------------ |
+/api-webflux/                 |       GET         |      -        |     HTML    | API index                |
+/api-webflux/playlist         |       GET         |      -        |     JSON    | List playlist            |
+/api-webflux/playlist         |       POST        |     JSON      |     JSON    | Create playlist          |
+/api-webflux/playlist/{id}    |       GET         |    int(id)    |     JSON    | Get playlist by id       |
+/api-webflux/playlist/{id}    |       PUT         | JSON, int(id) |     JSON    | Update playlist by id    |
+/api-webflux/playlist/{id}    |       DELETE      | JSON, int(id) |    boolean  | Delete playlist by id    |
+/api-webflux/playlist/webflux |       GET         |       -       |    webflux  | List playlist by webflux |
 
 ## Build
 
