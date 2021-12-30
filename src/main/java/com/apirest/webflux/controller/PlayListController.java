@@ -32,7 +32,8 @@ public class PlayListController {
     // Index da API
     @GetMapping("")
     public String index() {
-        return "Exemplo de API WEB-FLUX - Java Spring";
+        return "<h1>Exemplo de API WEB-FLUX - Java Spring</h1><span>API Reativa com uso do Webflux e MongoDB</span>"
+        + "<hr><table> <thead> <tr> <th>ROTA</th> <th>HTTP (Verbo)</th> <th>Request</th> <th>Return</th> <th>Description</th> </tr> </thead> <tbody> <tr> <td>/api-webflux/</td> <td>GET</td> <td>-</td> <td>HTML</td> <td>API index</td> </tr> <tr> <td>/api-webflux/playlist</td> <td>GET</td> <td>-</td> <td>JSON</td> <td>List playlist</td> </tr> <tr> <td>/api-webflux/playlist</td> <td>POST</td> <td>JSON</td> <td>JSON</td> <td>Create playlist</td> </tr> <tr> <td>/api-webflux/playlist/{id}</td> <td>GET</td> <td>int(id)</td> <td>JSON</td> <td>Get playlist by id</td> </tr> <tr> <td>/api-webflux/playlist/{id}</td> <td>PUT</td> <td>JSON, int(id)</td> <td>JSON</td> <td>Update playlist by id</td> </tr> <tr> <td>/api-webflux/playlist/{id}</td> <td>DELETE</td> <td>JSON, int(id)</td> <td>boolean</td> <td>Delete playlist by id</td> </tr> <tr> <td>/api-webflux/playlist/webflux</td> <td>GET</td> <td>-</td> <td>webflux</td> <td>List playlist by webflux</td> </tr> </tbody> </table>";
     }
 
     // Salvar playlist
